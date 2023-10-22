@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .navigation{
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 12px;
+        }
+        .title{
+            font-size: 55px;
+            font-weight: 500;
+            margin: 5px 0px 5px 20px;
+        }
+        .nav-box{
+            float: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 6vh;
+            margin-right: 6vh;
+            margin-top: 12px;
+        }
+        .navtxt{
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .nav-title:hover .navtxt{
+            color: rgb(144, 144, 144);
+        }
+        .spec-box{
+            width: 80%;
+            margin-left: 5vh;
+            background-color: #efefef;
+            border-radius: 20px;
+            padding: 5vh;
+            position: relative;
+        }
+        .spec-img{
+            width: 10vh;
+            height: 10vh;
+            position: absolute;
+            top: 2vh;
+            right: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <span class="title">详情页</span> 
+        <div class="nav-box">
+            <a class="nav-title" href="./form.html"><span class="navtxt">·表单页·</span></a>
+        </div>
+        <div class="nav-box" style="border-bottom: 1.5px solid #6b6b6b;">
+            <a class="nav-title"><span class="navtxt">·详情页·</span></a>
+        </div>
+        <div class="nav-box">
+            <a class="nav-title" href="./list.html"><span class="navtxt">·列表页·</span></a>
+        </div>
+        <div class="nav-box">
+            <a class="nav-title" href="./index.html"><span class="navtxt">·首页·</span></a>
+        </div>
+    </div>
+    <div class="spec">
+        <h1 style="margin-left: 5vh;margin-top: 3vh;">详情内容标题</h1>
+        <div class="spec-box">
+            <pre style="font-size: 18px;">
+·立项阶段 第3-6周
+·环境
+在github或gitee等上成功建库，并使用git管理网站代码， 能够使用commit、pull、push等基本命令，会设置分支和tag。
+
+·html
+请以可运行的网站，实现和演示至少如下四个页面：
+
+首页:指来自多个栏目的头条内容的汇聚或导航，一般由多个信息区块组成，其布局一般较为复杂。
+列表页： 指某个内容类型或栏目的目录，通常在首页上点击某个信息区块的‘more’链接进入，一般为一维列表或二维表格等，提供一个标题、
+         创建日期等基本信息，并提供链接跳转至详情页
+详情页: 网站内容的重点页面。一般来说，不同内容类型的详情页具有不同的布局与样式
+表单页: 用户对主要内容类型进行新增和更新的页面，重点检查。
+上述中的复数或集合类页面，如详情页，给出其中一个示例即可。对于结构相同，仅内容不同的多个页面实例，后续会采用前端模板 + json的方式进行批量生成
+
+·注意
+检查时，所有的页面的浏览应当是以Web网站的方式运行，即地址栏中为http://.... 而不是 file:///c:/....
+鼓励直接部署到github等Pages服务上
+页面中至少包含两种类型的内容：文本、图片
+表单中应覆盖大多数表单控件的使用，如单行多行文本、单选复选、下拉列表等
+            </pre>
+            <img src="./rcmd.png" class="spec-img">
+        </div>
+    </div>
+</body>
+</html>
