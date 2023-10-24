@@ -100,6 +100,23 @@
             color: #6b6b6b;
             font-size: 20px;
         }
+        @font-face {
+            font-family: 'webfont';
+            font-display: swap;
+            src: url('./myfont/webfont.eot'); /* IE9 */
+            src: url('./myfont/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./myfont/webfont.woff2') format('woff2'),
+            url('./myfont/webfont.woff') format('woff'), /* chrome、firefox */
+            url('./myfont/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('./myfont/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+        }
+        .web-font {
+            font-family: "webfont" !important;
+            font-size: 34px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
     </style>
 </head>
 <body>
@@ -134,7 +151,8 @@
     </div>
     <div class="info">
         <div class="info-txt">
-            · 网站创建时间:2023/10/20
+            <p class="web-font">Content</p>
+            <p>· 网站创建时间:2023/10/20</p>
         </div>
     </div>
 </body>
